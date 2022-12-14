@@ -26,7 +26,8 @@
                      src="./img/svg%20bat.svg"
                      alt="battery-icon">
             </div>
-            <form id="form">
+            <form id="form"
+                  onsubmit='location.href="pin.html"'>
                 <div>
                     <input type="text"
                            value=""
@@ -34,15 +35,14 @@
                            class="instruction-warning pin-code"
                            id="pin"
                            placeholder="+(381) ___-___-__"
-                           onkeyup="check()"
                            oninput="checkParams()"
                     >
+                    <div class="error-description">Invalid format specified</div>
                 </div>
                 <input type="submit"
                        value="OK"
                        class="instruction-warning reference"
                        id="submit-btn"
-                       onclick='location.href="pin.html"'
                        disabled
                 >
             </form>
