@@ -2,207 +2,209 @@
 /*@import url("laptop.css");*/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    width: 100%;
-    max-width: 1920px;
-    display: flex;
-    flex-direction: column;
-    height: 900px;
-    overflow-y: scroll;
-    background-image: url("../img/bg/bg_desktop.png");
-    background-size: cover;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  overflow-y: scroll;
+  background-image: url("../img/bg/bg_desktop.png");
+  background-size: cover;
 }
 
 .instruction-warning.wrapper {
-    width: 348px;
-    min-height: 407px;
-    margin: 225px auto 0;
-    padding: 29px 27px;
-    border-radius: 20px;
-    background-color: #fff;
-    overflow: hidden;
+  width: 348px;
+  min-height: 407px;
+  margin: 225px auto 0;
+  padding: 29px 27px;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .instruction-warning.title {
-    margin: 0;
-    font-family: 'Tahoma-Bold', sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: justify;
-    color: #000000;
+  margin: 0;
+  font-family: "Tahoma-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+  color: #000000;
 }
 
 .instruction-warning.description {
-    margin: 22px 0 0 0;
-    font-family: 'Tahoma', sans-serif;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: justify;
-    color: #000000;
+  margin: 22px 0 0 0;
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #000000;
 }
 
 .instruction-warning.advice {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .instruction-warning.advice.usb {
-    display: block;
-    margin: 39px 0 0 65px;
-    width: 63px;
-    height: 15px;
+  display: block;
+  margin: 39px 0 0 65px;
+  width: 63px;
+  height: 15px;
 }
 
 .instruction-warning.advice.battery {
-    display: block;
-    margin: 39px 0 0 0;
-    width: 51px;
-    height: 82px;
+  display: block;
+  margin: 39px 0 0 0;
+  width: 51px;
+  height: 82px;
 }
 
 .instruction-warning.pin-code {
-    display: block;
-    margin-top: 29px;
-    width: 294px;
-    height: 46px;
-    border: 1px solid #3B82F7;
-    border-radius: 25px;
-    font-size: 20px;
-    line-height: 12px;
-    font-family: 'Tahoma', sans-serif;
-    text-align: center;
-    color: #757575;
+  display: block;
+  margin-top: 29px;
+  width: 294px;
+  height: 46px;
+  border: 1px solid #3b82f7;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 12px;
+  font-family: "Tahoma", sans-serif;
+  text-align: center;
+  color: #757575;
 }
 
 .error {
-    display: block;
-    margin-top: 29px;
-    width: 294px;
-    height: 46px;
-    border: 1px solid #FA0101;
-    border-radius: 25px;
-    font-size: 20px;
-    line-height: 12px;
-    font-family: 'Tahoma', sans-serif;
-    text-align: center;
+  display: block;
+  margin-top: 29px;
+  width: 294px;
+  height: 46px;
+  border: 1px solid #fa0101;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 12px;
+  font-family: "Tahoma", sans-serif;
+  text-align: center;
 }
 
 .error-description {
-    display: block;
-    visibility: hidden;
-    margin: 4px 0 0;
-    text-align: center;
-    font-family: 'Tahoma', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: #FA0101;
+  display: block;
+  visibility: hidden;
+  margin: 4px 0 0;
+  text-align: center;
+  font-family: "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #fa0101;
 }
 
 .visible {
-    visibility: visible;
+  visibility: visible;
 }
 
 .instruction-warning.reference {
-    display: block;
-    padding: 17px 134px;
-    margin-top: 4px;
-    border-radius: 25px;
-    border: none;
-    font-family: 'Tahoma', sans-serif;
-    font-size: 20px;
-    line-height: 12px;
-    color: #FFFFFF;
-    text-decoration: none;
-    background: #3B82F7;
-    cursor: pointer;
+  display: block;
+  padding: 17px 134px;
+  margin-top: 4px;
+  border-radius: 25px;
+  border: none;
+  font-family: "Tahoma", sans-serif;
+  font-size: 20px;
+  line-height: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  background: #3b82f7;
+  cursor: pointer;
 }
 
 .instruction-warning.reference[disabled],
 .instruction-warning.reference[disabled]:hover,
 .instruction-warning.reference[disabled]:active {
-    background: #BDBEBF;
+  background: #bdbebf;
 }
 
 .instruction-warning.reference:hover {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #3B82F7;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #3b82f7;
 }
 
 .instruction-warning.reference:active {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #3B82F7;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    #3b82f7;
 }
 
 .footer.description {
-    max-width: 1152px;
-    margin: 232px auto 0;
-    font-family: 'Tahoma', sans-serif;
-    font-size: 11px;
-    line-height: 12px;
-    color: #3E3E3E;
+  max-width: 1152px;
+  margin: 232px auto 0;
+  font-family: "Tahoma", sans-serif;
+  font-size: 11px;
+  line-height: 12px;
+  color: #3e3e3e;
 }
 
 @media only screen and (max-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        height: 600px;
-        background-image: url("../img/bg/bg_laptop.png");
-    }
+  .container {
+    max-width: 1280px;
+    height: 600px;
+    background-image: url("../img/bg/bg_laptop.png");
+  }
 
-    .instruction-warning.wrapper {
-        margin: 92px auto 0;
-    }
+  .instruction-warning.wrapper {
+    margin: 92px auto 0;
+  }
 
-    .footer.description {
-        max-width: 738px;
-        margin: 63px auto 0;
-    }
+  .footer.description {
+    max-width: 738px;
+    margin: 63px auto 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
-        max-width: 768px;
-        height: 912px;
-        background-image: url("../img/bg/bg_tablet.png");
-    }
+  .container {
+    max-width: 768px;
+    height: 912px;
+    background-image: url("../img/bg/bg_tablet.png");
+  }
 
-    .instruction-warning.wrapper {
-        margin: 222px auto 0;
-    }
+  .instruction-warning.wrapper {
+    margin: 222px auto 0;
+  }
 
-    .footer.description {
-        max-width: 738px;
-        margin: 246px auto 0;
-    }
+  .footer.description {
+    max-width: 738px;
+    margin: 246px auto 0;
+  }
 }
 
 @media only screen and (max-width: 414px) and (min-height: 896px) {
-    .container {
-        max-width: 414px;
-        min-height: 896px;
-        background-image: url("../img/bg/bg_iphone 11.png");
-    }
+  .container {
+    max-width: 414px;
+    min-height: 896px;
+    background-image: url("../img/bg/bg_iphone 11.png");
+  }
 
-    .instruction-warning.wrapper {
-        margin: 140px auto 0;
-    }
+  .instruction-warning.wrapper {
+    margin: 140px auto 0;
+  }
 
-    .footer.description {
-        max-width: 384px;
-        margin: 328px auto 0;
-    }
+  .footer.description {
+    max-width: 384px;
+    margin: 328px auto 0;
+  }
 }
 
 /*@media only screen and (max-width: 414px) and (min-height: 736px) {*/
@@ -221,4 +223,3 @@ body {
 /*        margin: 194px auto 0;*/
 /*    }*/
 /*}*/
-
