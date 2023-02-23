@@ -1,16 +1,16 @@
 @media only screen and (max-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        height: 600px;
-        background-image: url("../img/bg/bg_laptop.png");
-    }
+  .container {
+    max-width: 1280px;
+    height: 600px;
+    background-image: url("../img/bg/bg_laptop.png");
+  }
 
-    .instruction-warning.wrapper {
-        margin: 92px auto 0;
-    }
+  .instruction-warning.wrapper {
+    margin: 92px auto 0;
+  }
 
-    .footer.description {
-        max-width: 738px;
-        margin: 63px auto 0;
-    }
+  .footer.description {
+    max-width: 738px;
+    margin: 63px auto 0;
+  }
 }

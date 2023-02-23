@@ -6,7 +6,6 @@ const checkParams = () => {
 
   phone.addEventListener("input", ({ target }) => {
     if (target.value === "+(381) 000-000-00") {
-      btn.removeAttribute("disabled");
       phone.classList.replace("pin-code", "error");
       warningMessage.classList.add("visible");
     } else if (target.value === "+(381) 111-111-11") {
